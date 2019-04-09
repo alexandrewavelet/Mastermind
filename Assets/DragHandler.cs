@@ -33,6 +33,10 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         {
             transform.position = startPosition;
         }
+        else
+        {
+            startParent.gameObject.GetComponent<Pile>().fill();
+        }
     }
 
 
